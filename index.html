@@ -14,12 +14,14 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
+
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html">
                     Web<span class="header-logo-navy">Studio</span>
@@ -36,6 +38,7 @@
                     </li>
                 </ul>
             </nav>
+
             <address class="header-address">
                 <ul class="header-address-list list">
                     <li class="header-address-item">
@@ -46,6 +49,79 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="header-btn js-open-menu">
+                <svg width="32" height="22" class="header-menu-btn">
+                    <use href="./images-hw-04/icons.svg#icon-charm_menu-hamburger" class="footer-subscribe-icon"></use>
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="mob-menu js-menu-container is-open">
+
+            <div>
+                <button class="mob-menu-close js-close-menu" type="button">
+                    <svg width="8" height="8" class="mob-menu-close-icon">
+                        <use href="./images-hw-04/icons.svg#icon-close-mob-menu"></use>
+                    </svg>
+                </button>
+
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-link link header-line-studio" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-contacts-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="mob-menu-address-list list">
+                    <li class="mob-menu-address-item">
+                        <a class="mob-menu-tel-link link" href="tel:+110001111111">+11(000)111-11-11</a>
+                    </li>
+                    <li class="mob-menu-address-item">
+                        <a class="mob-menu-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mob-menu-soc-list list">
+                    <li class="mob-menu-soc-item">
+                        <a class="mob-menu-soc-link link" href="">
+                            <svg width="24" height="24" class="mob-menu-soc-icon">
+                                <use href="./images-hw-04/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                        <a class="mob-menu-soc-link link" href="">
+                            <svg width="24" height="24" class="mob-menu-soc-icon">
+                                <use href="./images-hw-04/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                        <a class="mob-menu-soc-link link" href="">
+                            <svg width="24" height="24" class="mob-menu-soc-icon">
+                                <use href="./images-hw-04/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                        <a class="mob-menu-soc-link link" href="">
+                            <svg width="24" height="24" class="mob-menu-soc-icon">
+                                <use href="./images-hw-04/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
@@ -121,16 +197,16 @@
                 <h2 class="description-title">What are we doing</h2>
                 <ul class="description-list list">
                     <li class="description-item">
-                        <img class="description-img" src="./images-hw-01/img1.jpg" alt="Monitor" width="360"
-                            height="300" />
+                        <img class="description-img" srcset="./images-hw-01/img1.jpg 1x, ./images-hw-07/img1-2x.jpg 2x"
+                            src="./images-hw-01/img1.jpg" alt="Monitor" width="360" height="300" />
                     </li>
                     <li class="description-item">
-                        <img class="description-img" src="./images-hw-01/img2.jpg" alt="Phone" width="360"
-                            height="300" />
+                        <img class="description-img" srcset="./images-hw-01/img2.jpg 1x, ./images-hw-07/img2-2x.jpg 2x"
+                            src="./images-hw-01/img2.jpg" alt="Phone" width="360" height="300" />
                     </li>
                     <li class="description-item">
-                        <img class="description-img" src="./images-hw-01/img3.jpg" alt="Phone in hand" width="360"
-                            height="300" />
+                        <img class="description-img" srcset="./images-hw-01/img3.jpg 1x, ./images-hw-07/img3-2x.jpg 2x"
+                            src="./images-hw-01/img3.jpg" alt="Phone in hand" width="360" height="300" />
                     </li>
                 </ul>
             </div>
@@ -142,8 +218,8 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img class="team-item-img" src="./images-hw-01/team1.jpg" alt="Bearded man" width="264"
-                            height="260" />
+                        <img class="team-item-img" srcset="./images-hw-01/team1.jpg 1x, ./images-hw-07/team1-2x.jpg 2x"
+                            src="./images-hw-01/team1.jpg" alt="Bearded man" width="264" height="260" />
                         <div class="team-item-text">
                             <h3 class="team-item-title">Mark Guerrero</h3>
                             <p class="team-item-role">Product Designer</p>
@@ -180,8 +256,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-item-img" src="./images-hw-01/team2.jpg" alt="Smiling man" width="264"
-                            height="260" />
+                        <img class="team-item-img" srcset="./images-hw-01/team2.jpg 1x, ./images-hw-07/team2-2x.jpg 2x"
+                            src="./images-hw-01/team2.jpg" alt="Smiling man" width="264" height="260" />
                         <div class="team-item-text">
                             <h3 class="team-item-title">Tom Ford</h3>
                             <p class="team-item-role">Frontend Developer</p>
@@ -218,8 +294,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-item-img" src="./images-hw-01/team3.jpg" alt="Long haired woman" width="264"
-                            height="260" />
+                        <img class="team-item-img" srcset="./images-hw-01/team3.jpg 1x, ./images-hw-07/team3-2x.jpg 2x"
+                            src="./images-hw-01/team3.jpg" alt="Long haired woman" width="264" height="260" />
                         <div class="team-item-text">
                             <h3 class="team-item-title">Camila Garcia</h3>
                             <p class="team-item-role">Marketing</p>
@@ -256,8 +332,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-item-img" src="./images-hw-01/team4.jpg" alt="Smiling bearded man" width="264"
-                            height="260" />
+                        <img class="team-item-img" srcset="./images-hw-01/team4.jpg 1x, ./images-hw-07/team4-2x.jpg 2x"
+                            src="./images-hw-01/team4.jpg" alt="Smiling bearded man" width="264" height="260" />
                         <div class="team-item-text">
                             <h3 class="team-item-title">Daniel Wilson</h3>
                             <p class="team-item-role">UI Designer</p>
@@ -471,6 +547,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 

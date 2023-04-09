@@ -1,0 +1,422 @@
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .mob-menu {
+        visibility: hidden;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-list {
+        display: flex;
+        margin-left: 120px;
+    }
+
+    .header-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .header-link {
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        color: var(--headings-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .header-line-studio {
+        color: var(--ocean-pressed-color);
+    }
+
+    .header-line-portfolio {
+        color: var(--ocean-pressed-color);
+    }
+
+    .header-line-studio::after,
+    .header-line-portfolio::after {
+        content: "";
+
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: var(--ocean-pressed-color);
+        border-radius: 2px;
+
+        /* opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    }
+
+    /* .header-link:is(:hover, :focus)::after {
+        opacity: 1;
+    } */
+
+    .header-address {
+        font-style: normal;
+        margin-left: auto;
+    }
+
+    .header-address-list {
+        display: block;
+    }
+
+    .header-address-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .header-address-link {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        color: var(--body-text-color);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .hero {
+        height: 436px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images-hw-07/hero-tab.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images-hw-07/hero-tab-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    .about-list {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .about-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .about-item-title {
+        text-align: left;
+    }
+
+    .team>.container {
+        width: 552px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .customers>.container {
+        width: 552px;
+    }
+
+    .customers-list {
+        column-gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 24px * 2) / 3);
+        height: 88px;
+    }
+
+    .footer>.container {
+        width: 552px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .footer-logo-text {
+        max-width: 264px;
+        margin: 0;
+    }
+
+    .footer-logo {
+        display: block;
+    }
+
+    .footer-social-media {
+        margin: 0;
+    }
+
+    .footer-soc-title {
+        display: block;
+    }
+
+    .footer-subscribe-title {
+        display: block;
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+    }
+
+    .footer-form input {
+        width: 264px;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .header-list {
+        margin-left: 76px;
+    }
+
+    .header-address-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .header-link:is(:hover, :focus),
+    .header-address-link:is(:hover, :focus) {
+        color: var(--ocean-pressed-color);
+    }
+
+    .header-address-item:not(:last-child) {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .header-address-list {
+        display: flex;
+    }
+
+    .hero {
+        height: 600px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images-hw-04/people-office.png);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images-hw-07/people-office-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
+
+    .hero-btn:is(:hover, :focus) {
+        background-color: var(--ocean-pressed-color);
+        color: var(--white-color);
+    }
+
+    .about {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+
+    .about-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .about-item {
+        width: calc((100% - 24px) / 4);
+    }
+
+    .about-icon {
+        display: flex;
+        height: 112px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: var(--cloud-bg-color);
+    }
+
+    .about-item-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .about-item-text {
+        font-weight: 400;
+    }
+
+    .description {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .description-title {
+        margin-top: 0;
+        margin-bottom: 72px;
+
+        color: var(--headings-text-color);
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    .description-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .description-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team>.container {
+        width: 1158px;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 4);
+    }
+
+    .team-soc-link:is(:hover, :focus) {
+        background-color: var(--ocean-pressed-color);
+    }
+
+    .customers>.container {
+        width: 1158px;
+    }
+
+    .customers {
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 24px * 5) / 6);
+    }
+
+    .customers-link:is(:hover, :focus) {
+        border: 1px solid var(--ocean-pressed-color);
+    }
+
+    .customers-link:is(:hover, :focus) .customers-icon {
+        fill: var(--ocean-pressed-color);
+    }
+
+    .footer>.container {
+        width: 1158px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        gap: 0;
+    }
+
+    .footer-logo-text {
+        max-width: 264px;
+        margin-right: 120px;
+    }
+
+    .footer-social-media {
+        margin-right: 80px;
+    }
+
+    .footer-soc-link:is(:hover, :focus) {
+        background-color: var(--ocean-pressed-color);
+    }
+
+    .footer-btn:is(:hover, :focus) {
+        background-color: var(--ocean-pressed-color);
+        color: var(--white-color);
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    .description {
+        display: none;
+    }
+}
