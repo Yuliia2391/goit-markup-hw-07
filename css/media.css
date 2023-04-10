@@ -1,3 +1,18 @@
+:root {
+    --body-text-color: #434455;
+    --headings-text-color: #2E2F42;
+    --iris-accent-color: #4D5AE5;
+    --white-color: #FFFFFF;
+    --ocean-pressed-color: #404BBF;
+    --cloud-bg-color: #F4F4FD;
+    --cornflower-accent-bg-color: #E7E9FC;
+    --footer-bg-icons-color: rgba(255, 255, 255, 0.1);
+    --green-success-color: #31D0AA;
+    --lightslate-border-color: #8E8F99;
+    --modal-label-color: #8E8F99;
+    --modal-agreement-color: #757575;
+}
+
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
@@ -17,7 +32,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .header-nav {
@@ -208,6 +224,16 @@
     .footer-form input {
         width: 264px;
     }
+
+    .footer-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal {
+        min-width: 408px;
+    }
 }
 
 
@@ -244,6 +270,7 @@
     }
 
     .hero {
+        max-width: 1440px;
         height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
@@ -406,7 +433,7 @@
     }
 
     .footer-soc-link:is(:hover, :focus) {
-        background-color: var(--ocean-pressed-color);
+        background-color: var(--green-success-color);
     }
 
     .footer-btn:is(:hover, :focus) {

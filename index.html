@@ -50,7 +50,7 @@
                 </ul>
             </address>
 
-            <button type="button" class="header-btn js-open-menu">
+            <button class="header-btn" type="button" data-menu-open>
                 <svg width="32" height="22" class="header-menu-btn">
                     <use href="./images-hw-04/icons.svg#icon-charm_menu-hamburger" class="footer-subscribe-icon"></use>
                 </svg>
@@ -58,10 +58,10 @@
 
         </div>
 
-        <div class="mob-menu js-menu-container is-open">
+        <div class="mob-menu is-hidden" data-menu>
 
             <div>
-                <button class="mob-menu-close js-close-menu" type="button">
+                <button class="mob-menu-close" type="button" data-menu-close>
                     <svg width="8" height="8" class="mob-menu-close-icon">
                         <use href="./images-hw-04/icons.svg#icon-close-mob-menu"></use>
                     </svg>
@@ -69,13 +69,13 @@
 
                 <ul class="mob-menu-list list">
                     <li class="mob-menu-item">
-                        <a class="mob-menu-link link header-line-studio" href="./index.html">Studio</a>
+                        <a class="mob-menu-studio-link link header-line-studio" href="./index.html">Studio</a>
                     </li>
                     <li class="mob-menu-item">
                         <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="mob-menu-item">
-                        <a class="mob-menu-contacts-link link" href="">Contacts</a>
+                        <a class="mob-menu-link link" href="">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -547,7 +547,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
 
 </body>
 

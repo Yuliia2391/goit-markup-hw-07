@@ -129,7 +129,15 @@ body {
     letter-spacing: 0.02em;
 }
 
-.mob-menu-contacts-link {
+.mob-menu-studio-link {
+    color: var(--ocean-pressed-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.mob-menu-portfolio-link {
     color: var(--ocean-pressed-color);
     font-weight: 700;
     font-size: 36px;
@@ -147,7 +155,6 @@ body {
 
 .mob-menu-tel-link {
     display: flex;
-    justify-content: center;
 
     color: var(--iris-accent-color);
     font-weight: 700;
@@ -186,12 +193,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--iris-accent-color);
-}
-
-.is-open {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 }
 
 /* Hero */
@@ -696,14 +697,13 @@ body {
     width: 24px;
     height: 24px;
     margin-left: 16px;
-
     background-image: url(../images-hw-04/subscribe.svg);
 } */
 
 
 /* Portfolio Gallery */
 
-.gallery-container {
+.btn-row {
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -907,7 +907,7 @@ body {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    min-width: 408px;
+    min-width: 392px;
     padding: 72px 24px 24px;
     border-radius: 4px;
 
