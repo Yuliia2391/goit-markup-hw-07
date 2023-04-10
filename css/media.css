@@ -191,6 +191,7 @@
 
     .footer-container {
         flex-direction: row;
+        align-items: baseline;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
@@ -198,23 +199,18 @@
 
     .footer-logo-text {
         max-width: 264px;
-        margin: 0;
     }
 
     .footer-logo {
-        display: block;
-    }
-
-    .footer-social-media {
-        margin: 0;
+        text-align: start;
     }
 
     .footer-soc-title {
-        display: block;
+        text-align: start;
     }
 
     .footer-subscribe-title {
-        display: block;
+        text-align: start;
     }
 
     .footer-form {
@@ -229,6 +225,13 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+    }
+
+    /* Portfolio */
+
+    .btn-row {
+        padding-top: 64px;
+        padding-bottom: 96px;
     }
 
     .modal {
@@ -292,6 +295,10 @@
     .hero-title {
         max-width: 496px;
         margin-bottom: 48px;
+    }
+
+    .hero-btn {
+        cursor: pointer;
     }
 
     .hero-btn:is(:hover, :focus) {
@@ -396,6 +403,7 @@
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
+        justify-content: center;
     }
 
     .customers-item {
@@ -436,9 +444,21 @@
         background-color: var(--green-success-color);
     }
 
+    .footer-soc-link {
+
+        cursor: pointer;
+    }
+
     .footer-btn:is(:hover, :focus) {
         background-color: var(--ocean-pressed-color);
         color: var(--white-color);
+    }
+
+    /* Portfolio */
+
+    .btn-row {
+        padding-top: 100px;
+        padding-bottom: 120px;
     }
 }
 
